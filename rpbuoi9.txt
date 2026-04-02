@@ -1,0 +1,52 @@
+1.Dữ liệu bảng tính trên giấy hoặc excel là dữ liệu có cấu trúc
+
+2.Dữ liệu hình ảnh âm thanh là dữ liệu phi cấu trúc
+
+3.Dữ liệu rất phong phú như dữ liệu nội bộ, dữ liệu bán hàng, dữ liệu khách hàng, dữ liệu kế toán sau khi thu thập sẽ được lưu vào các bảng/table/collection sau đó các bảng này sẽ kết hợp lại thành các mô hình dữ liệu hay còn gọi là datamodel hoặc các csdl là database
+-Điểm khác nhau: 
+•	datamodel tập hợp các bảng logical
+•	database là tập hợp các physical
+
+4.Dữ liệu có cấu trúc là dữ liệu định dạng được xác định rõ ràng cho phép nó được tổ chức và phân tích dễ dàng ưu điểm là dễ truy xuất và rẻ
+
+5.Còn phi cấu trúc thì không dễ dàng phân loại nhưng ngày càng phổ biến  và là chìa khoá để phát triểnn kinh doanh với công nghệ hiện đại hiện nay thu thập dễ hơn lưu trữ dễ hơn nên rẻ hơn
+Vidu : Facebook, amazone 
+Tóm lại dữ liệu trong 1doanh nghiệp là sự pha trộn giữa có cấu trúc và phi cấu trúc 
+
+6.Database: Cơ sở dữ liệu là 1 tập hợp các dữ liệu có tổ chức 
+Cơ sở dữ liệu được biết đến như 1 tập hợp các bảng được số hoá và thông tin đó dễ dàng truy cập 
+Cơ sở dữ liệu quan hệ là tập hợp các bảng dữ liệu và các bảng mô phỏng 1 thực thể ngoài thực tế thông qua các thuộc tính và mối quan hệ
+Để lấy được thông tin trong cơ sở dữ liệu quan hệ thì cần truy vấn bằng ngôn ngữ truy vấn csdl hay gọi tắt là sql ngoài ra còn các ứng dụng khác tableau, Power PI
+
+7.Table trong database mỗi bảng sẽ là tập hợp bao gồm các hàng và các cột 
+1 cột được gọi là 1 trường hoặc 1 thuộc tính và chung 1 kiểu 1 dữ liệu duy nhất
+1 hàng được gọi 1 record
+ 
+8.Kiểu dữ liệu là xác định trường/ cột dữ liệu sẽ chứa và không thể thiếu
+kiểu số: đây là loại quan trọng nhất trong bất cứ csdl nào
+kiểu văn bản: đại diện cho 1 ký tự hoặc 1 chuỗi ký tự được thể  hiện dưới dạng char, varchar, nvarchar và đặt giới hạn bao nhiêu ký tự, lưu thông tin không dùng để tính toán
+kiểu đúng/sai: biểu thị các thuộc tính chỉ chấp nhận 2 giá trị
+kiểu date
+
+9.Khoá chính có thể bao gồm 1 hoặc nhiều cột , một bảng chỉ có 1 khoá chính và khoá chính không cho phép giá trị NULL(không có giá trị)
+
+10.Ràng buộc(constraint): dữ liệu trong  bảng cần tuân theo “luật” đã được xác định trước
+Dữ liệu  mới nhập phải tuân theo luật nếu không sẽ không được chấp nhận
+
+11.Các loại constraint:
+notnull: khi định nghĩa 1 cột thì cột đó bắt buộc phải có giá trị kể cả gái trị = 0
+unique: không cho phép dòng giống nhau trong 1 bảng dữ liệu 
+check: được sử dụng đẻ áp đặt 1 điều kiện trên 1 cột và bắt buộc dữ liệu trên cột đó phải thoả mãn đièu kiện đã được đặt ra
+
+12.Khoá ngoại: dùng để duy trì quan hệ giữa 2 đối tượng lớp cha và lớp con có thể tạo sau khi tạo bảng.Khi xoá dữ liệu trên bảng cha thì dữ liệu trên bảng con có thể bị xoá hoặc đưa về dạng null
+Cách kết hợp lấy dữ liệu nhiều bảng trong database
+TH1: giống nhau hoàn toàn về cấu trúc bằng cách ghép các dòng giống nhau về cột lại với nhau
+TH2: chỉ có 1 số cột chung thì làm bằng cách join bàng:
+-Kiểu join full outer join: lấy hết dữ liệu tất cả bảng bao gồm chung và riêng
+- Kiểu join inner join: lấy dữ liệu chung của các bảng với nhau
+-kiểu join left join: lấy dữ liệu chung và bảng riêng bên trái
+-kiểu join right join: lấy dữ liệu chung và riêng bên tay phải
+
+13.Diagram là lược đồ cho phép trực quan hoá các thông tin thuộc tính liên kết giữa các bảng trong CSDL 
+
+
