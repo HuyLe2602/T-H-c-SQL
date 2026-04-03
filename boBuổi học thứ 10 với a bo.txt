@@ -1,0 +1,12 @@
+1. Cách tạo và xóa database
+
+2. Tạo bảng và tạo bảng từ bảng có sẵn bằng alter table add
+
+3. alter table drop xóa bảng 
+
+4. alter table change đổi tên, modify column định dạng lại giơi hạn của kiểu dữ liệu
+
+5. cách vận dụng not null  và ràng buộc unique, add constraint uq_"nametable" unique(danh sách các cột trong unique)
+
+6.cách thêm primary key cho 1 thuộc tính = add primary key(thuộc tính)
+
